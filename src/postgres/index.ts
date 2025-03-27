@@ -8,7 +8,8 @@ import {
   ListToolsRequestSchema,
   ReadResourceRequestSchema,
 } from "@modelcontextprotocol/sdk/types.js";
-import { Pool, PoolClient } from "pg";
+import pkg from 'pg';
+const { Pool } = pkg;
 
 const server = new Server(
   {
@@ -32,7 +33,7 @@ if (args.length === 0) {
 const databaseUrl = args[0];
 
 const resourceBaseUrl = new URL(databaseUrl);
-resourceBaseUrl.protocol = "postgres:";
+resourceBaseUrl.protocol = "postgresql:";
 resourceBaseUrl.password = "";
 
 const pool = new Pool({
@@ -88,7 +89,7 @@ const FORBIDDEN_KEYWORDS = [
 ];
 
 // トランザクションを開始し、READ ONLYモードを設定する関数
-async function beginReadOnlyTransaction(client: PoolClient): Promise<void> {
+async function beginReadOnlyTransaction(client: pkg.PoolClient): Promise<void> {
   await client.query("BEGIN");
   await client.query("SET TRANSACTION READ ONLY");
   // セッションレベルでも読み取り専用に設定

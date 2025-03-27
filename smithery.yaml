@@ -12,8 +12,8 @@ startCommand:
     properties:
       postgresUrl:
         type: string
-        description: The postgres database connection URL in the format
-          postgres://[user][:password]@host[:port]/database.
+        description: The PostgreSQL database connection URL in the format
+          postgresql://[user][:password]@host[:port]/database.
   commandFunction:
     # A function that produces the CLI command to start the MCP on stdio.
     |-

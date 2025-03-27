@@ -21,7 +21,7 @@ PostgreSQLデータベース用のModel Context Protocolサーバー。このサ
 make docker
 
 # コンテナの起動
-docker run -i --rm mcp/postgres postgres://host:port/dbname
+docker run -i --rm mcp/postgres postgresql://host:port/dbname
 ```
 
 ### NPMを使用する場合
@@ -54,7 +54,7 @@ claude_desktop_config.jsonに以下の設定を追加してください：
         "-i",
         "--rm",
         "mcp/postgres",
-        "postgres://host:port/dbname"
+        "postgresql://host:port/dbname"
       ]
     }
   }
@@ -66,7 +66,7 @@ Note：macOSでDockerを使用する場合、PostgreSQLサーバーがホスト�
 ### 接続URLの形式
 
 ```
-postgres://[user][:password]@host[:port]/database
+postgresql://[user][:password]@host[:port]/database
 ```
 
 /databaseを実際のデータベース名に置き換えてください。

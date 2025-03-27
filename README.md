@@ -21,7 +21,7 @@ Model Context Protocol Server for PostgreSQL databases. This server enables LLMs
 make docker
 
 # Run with Docker
-docker run -i --rm mcp/postgres postgres://host:port/dbname
+docker run -i --rm mcp/postgres postgresql://host:port/dbname
 ```
 
 ### Using NPM
@@ -54,7 +54,7 @@ Add the following configuration to your `claude_desktop_config.json`:
         "-i",
         "--rm",
         "mcp/postgres",
-        "postgres://host:port/dbname"
+        "postgresql://host:port/dbname"
       ]
     }
   }
@@ -66,7 +66,7 @@ Note: When using Docker on macOS, use `host.docker.internal` if the PostgreSQL s
 ### Connection URL Format
 
 ```
-postgres://[user][:password]@host[:port]/database
+postgresql://[user][:password]@host[:port]/database
 ```
 
 Replace `/database` with your database name.
