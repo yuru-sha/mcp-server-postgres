@@ -24,12 +24,6 @@ make docker
 docker run -i --rm mcp/postgres postgresql://host:port/dbname
 ```
 
-### Using NPM
-
-```bash
-npm install @modelcontextprotocol/server-postgres
-```
-
 ### Installing via Smithery
 
 To install PostgreSQL Database Server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@yuru-sha/mcp-server-postgres):
