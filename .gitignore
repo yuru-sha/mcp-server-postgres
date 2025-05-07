@@ -139,3 +139,5 @@ dist
 
 # windsurf rules
 .windsurfrules
+# SpecStory explanation file
+.specstory/.what-is-this.md
