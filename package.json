@@ -1,6 +1,6 @@
 {
   "name": "mcp-server-postgres",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "MCP server for interacting with PostgreSQL databases",
   "license": "MIT",
   "author": "yuru-sha",
