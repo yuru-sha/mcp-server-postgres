@@ -26,7 +26,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^8.56.0",
-    "@modelcontextprotocol/inspector": "0.4.1",
+    "@modelcontextprotocol/inspector": "0.16.6",
     "@types/node": "^20.11.19",
     "@typescript-eslint/eslint-plugin": "^5.54.0",
     "@typescript-eslint/parser": "^5.54.0",
