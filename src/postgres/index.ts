@@ -8,7 +8,7 @@ import {
   ListToolsRequestSchema,
   ReadResourceRequestSchema,
 } from "@modelcontextprotocol/sdk/types.js";
-import pkg from 'pg';
+import pkg from "pg";
 const { Pool } = pkg;
 
 const server = new Server(
