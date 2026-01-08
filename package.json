@@ -20,7 +20,7 @@
     "format": "prettier --write \"**/*.ts\""
   },
   "dependencies": {
-    "@modelcontextprotocol/sdk": "1.24.0",
+    "@modelcontextprotocol/sdk": "1.25.2",
     "@types/pg": "^8.11.10",
     "pg": "^8.13.0"
   },
